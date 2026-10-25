@@ -10,8 +10,6 @@ INSERT INTO categoria (id_categ, nome_categoria) VALUES (null, 'Rock japones');
 INSERT INTO categoria (id_categ, nome_categoria) VALUES (null, 'J-pop');
 INSERT INTO categoria (id_categ, nome_categoria) VALUES (null, 'City Pop');
 
-SELECT * FROM shows;
-
 CREATE TABLE shows (
     id_show INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(50) NOT NULL,
@@ -44,5 +42,3 @@ CREATE TABLE usuarios
     email VARCHAR(100) UNIQUE NOT NULL, 
     senha VARCHAR(255) NOT NULL ); 
 INSERT INTO usuarios (nome, email, senha) VALUES ('admin', 'admin@email.com', '123');
-
-select * from shows;
