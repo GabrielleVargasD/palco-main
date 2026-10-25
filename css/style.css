@@ -1,0 +1,36 @@
+@import "tailwindcss";
+body {
+    background-color: #ffffff;
+    color: #171717;
+    font-family: Arial, sans-serif;
+}
+
+.titulo-festival {
+    color: #d71920;
+    font-weight: bold;
+}
+
+
+.banner-festival {
+    background-image: url('../fotos/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 450px;
+    height: 55vh;
+}
+
+@media (max-width: 768px) {
+    .banner-festival {
+        height: 350px;
+        min-height: 350px;
+    }
+}
+
+.card-show {
+    transition: transform 0.2s;
+}
+
+.card-show:hover {
+    transform: translateY(-4px);
+}
